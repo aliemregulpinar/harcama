@@ -43,15 +43,17 @@ export default function ScanScreen() {
     if (!previewUri || saving) return;
     setSaving(true);
     try {
-      await saveReceiptPhotoFromUri(previewUri);
+      const dest = await saveReceiptPhotoFromUri(previewUri);
       setPreviewUri(null);
-      router.push('/receipts');
+      // meta formuna git
+      router.push({ pathname: '/receipts/new', params: { uri: dest } });
     } catch (e) {
       console.warn('save error', e);
     } finally {
       setSaving(false);
     }
   }
+  
 
   if (previewUri) {
     return (
