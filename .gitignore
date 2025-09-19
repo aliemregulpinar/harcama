@@ -1,0 +1,52 @@
+# dependencies
+node_modules/
+
+# Expo / Metro
+.expo/
+.expo-shared/
+.expo/web/cache/
+dist/
+web-build/
+expo-env.d.ts
+expo-error.log
+.metro-health-check*
+
+# Editor
+.vscode/
+.idea/
+
+# Native (prebuild sonrası oluşursa takip ETME)
+ios/
+android/
+Pods/
+*.keystore
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.apk
+*.aab
+*.ipa
+
+# Debug / logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+pnpm-debug.log*
+*.log
+*.pid
+
+# OS
+.DS_Store
+Thumbs.db
+*.pem
+
+# Local env files
+.env
+.env.*
+.env*.local
+!.env.example
+
+# TypeScript
+*.tsbuildinfo

@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "harcama",
+    "slug": "harcama",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Kamera erişimine ihtiyacımız var",
+          "microphonePermission": "Mikrofon erişimine ihtiyacımız var"
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {}
+  }
+}
